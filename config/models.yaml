@@ -1,0 +1,40 @@
+models:
+  - id: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+    slug: tinyllama-1.1b
+    size_b: 1.1
+    batch_size_fp16: 8
+    batch_size_4bit: 16
+    quantize: false
+    chat_template: tinyllama
+
+  - id: microsoft/phi-2
+    slug: phi-2
+    size_b: 2.7
+    batch_size_fp16: 4
+    batch_size_4bit: 8
+    quantize: false
+    chat_template: phi2
+
+  - id: mistralai/Mistral-7B-Instruct-v0.1
+    slug: mistral-7b
+    size_b: 7.0
+    batch_size_fp16: 2
+    batch_size_4bit: 4
+    quantize: false
+    chat_template: mistral
+
+  - id: HuggingFaceH4/zephyr-7b-beta
+    slug: zephyr-7b
+    size_b: 7.0
+    batch_size_fp16: 2
+    batch_size_4bit: 4
+    quantize: false
+    chat_template: zephyr
+
+  - id: lmsys/vicuna-13b-v1.5
+    slug: vicuna-13b
+    size_b: 13.0
+    batch_size_fp16: 1
+    batch_size_4bit: 2
+    quantize: true
+    chat_template: vicuna
