@@ -9,3 +9,6 @@ results/
 dist/
 build/
 .DS_Store
+!results/plots/
+!results/plots/*.png
+!results/summary.json
